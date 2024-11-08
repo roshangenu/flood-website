@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <style>
+    /* Resetting margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Centering and styling the background */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: url('./assets/img/image1.jpg') no-repeat center center/cover;
+      /* background: #fff; Dark background */
+      color: #fff; /* White text color */
+    }
+
+    /* Styling the container */
+    .container {
+      background: #a9a6a6; /* Slightly lighter background for the form */
+      padding: 2rem;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .container h2 {
+      color: #fff;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    /* Input fields styling */
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      margin: 0.8rem 0;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #555; /* Subtle border */
+      background: #222; /* Darker input background */
+      color: #fff;
+      outline: none;
+      transition: border 0.3s;
+    }
+
+    .input-field:focus {
+      border: 1px solid #999;
+    }
+
+    /* Sign in button */
+    .btn {
+      width: 100%;
+      padding: 10px;
+      font-size: 1.1rem;
+      color: #fff;
+      background-color: #555;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 1rem;
+    }
+
+    .btn:hover {
+      background-color: #777;
+    }
+
+    /* Social sign-in buttons */
+    .social-btn {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      color: #333;
+      background-color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social-btn img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+
+    .social-btn:hover {
+      background-color: #e0e0e0;
+    }
+
+    /* Additional link for Forgot Password */
+    .forgot-password {
+      display: block;
+      margin-top: 1rem;
+      color: #fffefe;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .forgot-password:hover {
+      color: #fafafa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Sign In</h2>
+    <form>
+      <input type="text" placeholder="Username" class="input-field" required>
+      <input type="password" placeholder="Password" class="input-field" required>
+      <button type="submit" class="btn">Sign In</button>
+      <a href="#" class="forgot-password" >Forgot Password?</a>
+    </form>
+
+    <!-- Social sign-in buttons -->
+    <button class="social-btn">
+      <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-black-icon.png" alt="Google logo">
+      Sign in with Google
+    <button class="social-btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple logo">
+      Sign in with Apple
+    </button>
+  </div>
+
+</body>
+</html>

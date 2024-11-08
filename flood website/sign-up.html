@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    /* Resetting margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Centering and styling the background */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: url('./assets/img/image1.jpg') no-repeat center center/cover;
+      color: #fff;
+    }
+
+    /* Styling the container */
+    .container {
+      background: rgba(169, 166, 166, 0.9); /* Semi-transparent background */
+      padding: 2rem;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .container h2 {
+      color: #fff;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    /* Input fields styling */
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      margin: 0.8rem 0;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #555;
+      background: #ffffff;
+      color: #fff;
+      outline: none;
+      transition: border 0.3s;
+    }
+
+    .input-field:focus {
+      border: 1px solid #999;
+    }
+
+    /* Sign up button */
+    .btn {
+      width: 100%;
+      padding: 10px;
+      font-size: 1.1rem;
+      color: #fff;
+      background-color: #555;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 1rem;
+    }
+
+    .btn:hover {
+      background-color: #777;
+    }
+
+    /* Social sign-up buttons */
+    .social-btn {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      color: #333;
+      background-color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social-btn img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+
+    .social-btn:hover {
+      background-color: #e0e0e0;
+    }
+    .hr-or {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      margin: 20px 0;
+    }
+
+    .hr-or::before, .hr-or::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid #fafafa;
+    }
+
+    .hr-or:not(:empty)::before {
+      margin-right: 10px;
+    }
+
+    .hr-or:not(:empty)::after {
+      margin-left: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Sign Up</h2>
+    <form>
+      <input type="text" placeholder="First Name" class="input-field" required>
+      <input type="text" placeholder="Last Name" class="input-field" required>
+      <input type="email" placeholder="Email" class="input-field" required>
+      <input type="password" placeholder="Password" class="input-field" required>
+      <input type="password" placeholder="Confirm Password" class="input-field" required>
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+
+    <!-- Social sign-up buttons -->
+    <div class="hr-or">or</div>
+
+    <button class="social-btn">
+      <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-black-icon.png" alt="Google logo">
+      Sign up with Google
+    </button>
+    <button class="social-btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple logo">
+      Sign up with Apple
+    </button>
+  </div>
+
+</body>
+</html>
